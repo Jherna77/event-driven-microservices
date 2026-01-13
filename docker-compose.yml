@@ -20,9 +20,10 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     healthcheck:
       test: ["CMD", "kafka-topics", "--bootstrap-server", "localhost:9092", "--list"]
-      interval: 5s
-      timeout: 2s
-      retries: 5
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
 
   kafdrop:
     image: obsidiandynamics/kafdrop:latest
