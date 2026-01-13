@@ -1,0 +1,35 @@
+#### JAVA & MAVEN ####
+**/target/
+**/*.class
+
+# Ignorar archivos de ayuda generados por Initializr
+**/HELP.md
+
+#### IDEs (VS Code, IntelliJ, STS, NetBeans) ####
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache
+.apt_generated
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+#### Logs & OS ####
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+#### DOCKER ####
+.docker/

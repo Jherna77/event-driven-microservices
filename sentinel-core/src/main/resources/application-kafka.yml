@@ -1,0 +1,24 @@
+# Application configuration for Kafka environment
+spring:
+  kafka:
+    bootstrap-servers: ${SPRING_KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        '[spring.json.add.type.headers]': false
+    # Configuración del consumidor para pruebas
+    consumer:
+      group-id: sentinel-notifier
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        '[spring.json.value.default.type]': com.jhernandez.sentinel.core.infrastructure.adapter.out.event.dto.IncidentReportedIntegrationEvent
+        '[spring.json.trusted.packages]': "com.jhernandez.sentinel.*"
+    listener:
+      missing-topics-fatal: false
+sentinel:
+  kafka:
+    topics:
+      incident-reported: sentinel.incident.reported

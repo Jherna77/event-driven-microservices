@@ -1,0 +1,4 @@
+# Application configuration for main environment  
+spring:
+  application:
+    name: sentinel-core
