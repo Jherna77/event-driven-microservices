@@ -259,7 +259,7 @@ El servicio Sentinel Core expone una API REST que actúa como punto de entrada a
   4. Ejecutar la petición
 
 <p align="center">
-<img src="/screenshots/SwaggerRequest.png" alt="Peticion Swagger" width="700"/>
+<img src="screenshots/SwaggerRequest.png" alt="Peticion Swagger" width="700"/>
 </p>
 
 #### 2️⃣ Qué ocurre internamente
@@ -291,7 +291,7 @@ Este flujo demuestra una comunicación desacoplada y orientada a eventos.
 * En Swagger debería recibirse una respuesta HTTP `201 Created`
 
 <p align="center">
-<img src="/screenshots/SwaggerResponse.png" alt="Respuesta Swagger" width="700"/>
+<img src="screenshots/SwaggerResponse.png" alt="Respuesta Swagger" width="700"/>
 </p>
 
 * Consultando el log del consumidor (Sentinel Notifier)
@@ -314,7 +314,7 @@ Este flujo demuestra una comunicación desacoplada y orientada a eventos.
   * Inspeccionar el mensaje publicado por Sentinel Core
 
 <p align="center">
-<img src="/screenshots/Kafdrop.png" alt="Kafdrop messages" width="700"/>
+<img src="screenshots/Kafdrop.png" alt="Kafdrop messages" width="700"/>
 </p>
 
 * Verificar el estado del consumidor
